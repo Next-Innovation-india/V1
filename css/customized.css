@@ -355,6 +355,11 @@ h1 {}
         transform: translateY(0);
     }
 }
+
+.main-nav .logo img {
+    width: 268px;
+    height: auto;
+}
 .nav-fixed .logo img {
     width: 200px;
     height: auto;
