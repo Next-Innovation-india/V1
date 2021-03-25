@@ -92,6 +92,10 @@
   
 img {}
 
+
+.main-scene__text {
+    z-index: 0;
+}
 .main-scene__text p.handwritten {
     padding: 0;
     position: relative !important;
