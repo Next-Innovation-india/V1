@@ -38,6 +38,7 @@
     color: #d0ccff !important;
 }
 
+
 .menu *:hover{
     fill: #d0ccff !important;
 }
@@ -254,7 +255,9 @@ h1 {}
 .plain .main-scene__text p {
     color: #222;
 }
-
+.main-nav .logo {
+    margin-top: 7px;
+}
 .main-nav .logo span {left: 115px;top: 15px;font-size: 36px;}
 
 .menu * {
@@ -268,13 +271,13 @@ h1 {}
     float: right;
 }
 
-.main-nav .logo img {
-    position: absolute;
-    top: 30px;
-    width: 75px;
-    height: auto;
-    margin-left: 30px;
-}
+/*.main-nav .logo img {*/
+/*    position: absolute;*/
+/*    top: 30px;*/
+/*    !*width: 75px;*!*/
+/*    height: auto;*/
+/*    margin-left: 30px;*/
+/*}*/
 
 .main-scene__text {
     text-align: left;
@@ -297,14 +300,14 @@ h1 {}
 }
 
 
-.main-nav .logo img {
-    position: absolute;
-    top: 30px;
-    width: 75px;
-    height: auto;
-    margin-left: 5px;
-    margin-top: -5px;
-}
+/*.main-nav .logo img {*/
+/*    position: absolute;*/
+/*    top: 30px;*/
+/*    width: 75px;*/
+/*    height: auto;*/
+/*    margin-left: 5px;*/
+/*    margin-top: -5px;*/
+/*}*/
 
 .main-scene__text {
     text-align: center;
@@ -352,7 +355,10 @@ h1 {}
         transform: translateY(0);
     }
 }
-
+.nav-fixed .logo img {
+    width: 200px;
+    height: auto;
+}
 
 /* The Modal (background) */
 .modal {
@@ -831,7 +837,9 @@ header.main-nav {
 
 
 }
-
+.main-nav .container {
+    padding-top: 0;
+}
 @media (min-width: 576px) and (max-width: 768px) {
     .main-nav .container {
         padding: 10px;
