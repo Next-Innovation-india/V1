@@ -129,23 +129,21 @@
             <a href="#" class="btn openpopup">Sign up for free</a>
             <a href="#" class="paly-video" id="play-video">
               <p>Watch video</p>
-              <span class="play-icon">
+              <span class="play-icon" id="play-icon">
                 <i class="far fa-play-circle"></i>
               </span>
-                <!-- Trigger/Open The Modal -->
 
+              <!-- The Modal -->
+              <div id="myModal" class="modal">
 
-                <!-- The Modal -->
-                <div id="myModal" class="modal">
-
-                    <!-- Modal content -->
-                    <div class="modal-content">
-                      <span class="close">&times;</span>
-                      <iframe id="youtube_player" class="yt_player_iframe" width="80%" height="100%" src="http://www.youtube.com/embed/eDvSrMnL-8M?enablejsapi=1&version=3&playerapiid=ytplayer"  allowfullscreen="true" allowscriptaccess="always" frameborder="0"></iframe>
-
-                    </div>
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <iframe id="youtube_player" class="yt_player_iframe" width="80%" height="100%" src="http://www.youtube.com/embed/eDvSrMnL-8M?enablejsapi=1&version=3&playerapiid=ytplayer"  allowfullscreen="true" allowscriptaccess="always" frameborder="0"></iframe>
 
                 </div>
+
+              </div>
 
             </a>
           </div>
@@ -475,25 +473,31 @@
   <script src="js/script.js"></script>
 
   <script>
-      // Get the modal
-      var modal = document.getElementById("myModal");
+    // Get the modal
+    var modal = document.getElementById("myModal");
 
-      // Get the button that opens the modal
-      var btn = document.getElementById("play-video");
+    // Get the button that opens the modal
+    var btn = document.getElementById("play-icon");
 
-      var span = document.getElementsByClassName("close") [0];
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
 
-      // When the user clicks the button, open the modal
-      btn.onclick = function() {
-          $("#myModal").toggle();
+    // When the user clicks on the button, open the modal
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
       }
-      span.onclick = function() {
-        $('.yt_player_iframe').each(function(){
-          this.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*')
-        });
-        $("#myModal").addClass("close");
-
-      }
+    }
 
 
 
