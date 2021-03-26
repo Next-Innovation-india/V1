@@ -34,6 +34,10 @@
     margin-right: 15px;
 }
 
+.main-nav nav .menu {
+    top: -17px;
+}
+
 .main-nav nav .menu li:nth-of-type(2) a:hover{
     color: #d0ccff !important;
 }
