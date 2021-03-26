@@ -384,7 +384,7 @@ h1 {}
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: wehite;
+    background-color: white;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     width: 80%; /* Could be more or less, depending on screen size */
@@ -392,10 +392,11 @@ h1 {}
 
 /* The Close Button */
 .close {
-    color: #aaa;
+    color: #7a6eff;
     float: right;
     font-size: 28px;
     font-weight: bold;
+    margin: 2% 4%;
 }
 
 .close:hover,
