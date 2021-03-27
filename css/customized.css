@@ -619,8 +619,8 @@ section.main-scene.bg2 {
     margin-left: -8px;
 }
 
-.main-nav .logo img {
-    width: 50px;
+.main-nav .logo2 img {
+    width: 100px;
     top: 5px;
 }
 
@@ -764,7 +764,7 @@ header.main-nav {
     }
 
     .burger-menu{
-        margin-top: 8px;
+        margin-top: -18px;
     }
 
     .main-scene.mob{
