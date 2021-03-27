@@ -123,11 +123,12 @@ img {}
     float: left;
     margin-left: 10%;
 }
-.paly-video span {
-    float: right;
-    color: #7a6eff;
-    font-size: 30px;
-    margin-top: 3px;
+
+.play-icon img {
+    width: 15%;
+    display: inline-block;
+    margin-top: 4px;
+    margin-left: 7px;
 }
 
 .step3 .step__image img {
