@@ -632,6 +632,8 @@ header.main-nav {
 .grading-superpowers .openpopup {
     margin-bottom: 350px !important;
 }
+
+
 .footerli{
     margin-bottom: 10px;
 }
@@ -1108,4 +1110,14 @@ header.main-nav {
 }
 .nav-fixed nav .menu li {
     margin-right: -5px;
+}
+
+.footer-menu__item-list li i {
+    margin-right: 10px;
+}
+.footer-menu__item-list .footerli i {
+    margin-right: 16px;
+}
+.footer-mobile {
+    margin-left: 27px;
 }
