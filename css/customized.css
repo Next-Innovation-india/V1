@@ -1,5 +1,6 @@
 *{
     /*width:auto;*/
+    font-family: 'Gordita';
 }
 
 .alert {
@@ -35,7 +36,7 @@
 }
 
 .main-nav nav .menu {
-    top: -17px;
+    top: -17px.main-scene__text p;
 }
 
 .main-nav nav .menu li:nth-of-type(2) a:hover{
@@ -254,12 +255,18 @@ section.grading-superpowers {
 h1 {}
 
 .main-scene__text p {
-    font-weight: bold;
     color: #151b26;
-    text-align: center;
+    text-align: left;
     margin-right: 2px;
 }
 
+.main-scene__text p.main-text {
+    font-size: 3em;
+    line-height: 1em;
+}
+.main-scene__text p.handwritten {
+    line-height: 3em;
+}
 .plain .main-scene__text p {
     color: #222;
 }
@@ -289,11 +296,12 @@ h1 {}
 
 .main-scene__text {
     text-align: left;
+    margin-bottom: 11em;
 }
 
-.main-scene__text h1 {
-    text-align: center;
-}
+/*.main-scene__text h1 {*/
+/*    text-align: center;*/
+/*}*/
 
 .main-nav .logo span {left: 80px;top: 0px;font-size: 36px;color: #273347;}
 
@@ -317,9 +325,7 @@ h1 {}
 /*    margin-top: -5px;*/
 /*}*/
 
-.main-scene__text {
-    text-align: center;
-}
+
 
 .plain .main-scene__text {
     color: #222;
