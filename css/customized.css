@@ -245,6 +245,20 @@ section.grading-superpowers {
 
 .number {}
 
+.video-explain {
+    height: 400px;
+    margin: 8% 0;
+}
+.explainor-video {
+    text-align: center;
+    margin: 0 0 2%;
+    color: gray;
+}
+.video-explain iframe {
+    margin: 0 25%;
+    width: 50%;
+}
+
 .howitwork .arrow-down {
     /* display: none; */
     width: auto;
