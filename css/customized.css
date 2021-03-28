@@ -453,7 +453,18 @@ section.main-scene.bg2 {
     }
 }
 
-@media(max-width: 768px){
+@media (width:768px) {
+    .main-scene__image.desktop {
+        display: none;
+    }
+    .main-scene__image {
+        top: 0;
+        max-width: 80vw;
+        margin: 10% auto;
+    }
+}
+
+@media(max-width: 767px){
     *{
         /*width:auto;*/
     }
@@ -595,7 +606,10 @@ section.main-scene.bg2 {
     min-height: 100vh;
     background-repeat: no-repeat;
 }
-
+    .main-scene-bottom .paly-video {
+        width: 150px;
+        padding-top: 6%;
+    }
 
 .logo {
     padding: 15px 0;
