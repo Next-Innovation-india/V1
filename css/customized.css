@@ -231,17 +231,25 @@ section.grading-superpowers {
 .step3 .step__description {
     padding-top: 0;
 }
+.paper-test .step2 .step__image img {
+    width: 88%;
+}
 
 .number span {
     padding: 0px 25px;
     color: #fff !important;
 }
-.paper-test .number 
+.paper-test .number {
+    background-color: #ffc90e   !important;
+}
+.online-test .number{
+    background-color: #2643e6 !important;
+}
 
 .number {
     /* display: inline-block !important; */
     position: relative;
-    background-color: #ffc90e   !important;
+
 }
 
 .number {}
