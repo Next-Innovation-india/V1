@@ -1017,7 +1017,7 @@ header.main-nav {
     }
     .nav-fixed {
         padding: 10px 45px !important;
-    } 
+    }
     .main-nav .logo {
         margin-top: -2%;
     }
@@ -1149,7 +1149,28 @@ header.main-nav {
 
 }
 
-
+@media (width:720px) {
+    section.main-scene {
+        padding-top: 30%;
+    }
+    .main-scene-bottom .paly-video {
+        padding-top: 2%;
+    }
+    .main-nav .logo {
+        margin-top: 0;
+        padding: 0;
+    }
+    .main-nav nav .menu {
+        top: -12px;
+    }
+    .nav-fixed {
+        padding: 0 40px !important;
+    }
+    .nav-fixed .menu * {
+        fill: #796eff !important;
+        color: #796eff !important;
+    }
+}
 
 
 
