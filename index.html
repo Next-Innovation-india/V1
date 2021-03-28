@@ -153,76 +153,107 @@
       </div>
     </div>
 
-    <div class="steps-block">
-      <div class="step step1">
-        <div class="number"><span>1</span></div>
-        <div class="container">
-          <div class="step__image">
-            <img class="blockleft" src="img/step1.png" alt="Input the answers to your test" />
-          </div>
-          <div class="step__description">
 
-            <h3 class="step__description_right">Create an answer key</h3>
-            <p class="step__description_right">Only input your answers, no need to re-create your entire test</p>
+    <div class="tab-wrap">
+
+      <!-- active tab on page load gets checked attribute -->
+      <input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
+      <label for="tab1">Paper test</label>
+
+      <input type="radio" id="tab2" name="tabGroup1" class="tab">
+      <label for="tab2">Online test</label>
+
+
+
+
+      <div class="tab__content">
+
+        <div class="steps-block">
+          <div class="step step1">
+            <div class="number"><span>1</span></div>
+            <div class="container">
+              <div class="step__image">
+                <img class="blockleft" src="img/step1.png" alt="Input the answers to your test" />
+              </div>
+              <div class="step__description">
+
+                <h3 class="step__description_right">Create an answer key</h3>
+                <p class="step__description_right">Only input your answers, no need to re-create your entire test</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="step step2">
+            <div class="number number2"><span>2</span></div>
+            <div class="container">
+              <div class="step__image">
+                <img class="blockright" src="img/step2.png" alt="SwiftGrade generates student answer sheets" />
+              </div>
+              <div class="step__description">
+
+                <h3 class="step__description_left">SwiftGrade generates student answer sheets</h3>
+                <p class="step__description_left">Print these answer sheets</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="step step3">
+            <div class="number"><span>3</span></div>
+            <div class="container">
+              <div class="step__image">
+                <img class="blockleft" src="img/step3.png" alt="Distribute these answer sheets along with your test" />
+              </div>
+              <div class="step__description">
+
+                <h3 class="step__description_right">
+                  Distribute our answer sheets along with <br class="mob-break">your test
+                </h3>
+                <p class="step__description_right">Students write their answers into these sheets</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="step step4">
+            <div class="number"><span>4</span></div>
+            <div class="container">
+              <div class="step__image">
+                <img class="blockright step4" src="img/step4.png"
+                     alt="Point your phone at completed answer sheets and your grading is DONE!" />
+              </div>
+              <div class="step__description">
+
+                <h3 class="step__description_left">
+                  Scan completed answer sheets with our appand your done!
+                </h3>
+                <p class="step__description_left">
+                  SwiftGrade compares the student answer sheets to your answer key <br class="mob-break2">to
+                  generate results
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="video-explain">
+            <h3 class="explainor-video">Explainor video</h3>
+            <iframe id="youtube_player" class="yt_player_iframe" width="100%" height="100%" src="http://www.youtube.com/embed/eDvSrMnL-8M?enablejsapi=1&version=3&playerapiid=ytplayer"  allowfullscreen="true" allowscriptaccess="always" frameborder="0"></iframe>
           </div>
         </div>
+
       </div>
 
-      <div class="step step2">
-        <div class="number number2"><span>2</span></div>
-        <div class="container">
-          <div class="step__image">
-            <img class="blockright" src="img/step2.png" alt="SwiftGrade generates student answer sheets" />
-          </div>
-          <div class="step__description">
+      <div class="tab__content">
+        <h3>Medium Section</h3>
+        <p>Praesent nonummy mi in odio. Nullam accumsan lorem in dui. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Nullam accumsan lorem in dui. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
 
-            <h3 class="step__description_left">SwiftGrade generates student answer sheets</h3>
-            <p class="step__description_left">Print these answer sheets</p>
-          </div>
-        </div>
+        <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Morbi mattis ullamcorper velit. Pellentesque posuere. Etiam ut purus mattis mauris sodales aliquam. Praesent nec nisl a purus blandit viverra.</p>
       </div>
 
-      <div class="step step3">
-        <div class="number"><span>3</span></div>
-        <div class="container">
-          <div class="step__image">
-            <img class="blockleft" src="img/step3.png" alt="Distribute these answer sheets along with your test" />
-          </div>
-          <div class="step__description">
 
-            <h3 class="step__description_right">
-              Distribute our answer sheets along with <br class="mob-break">your test
-            </h3>
-            <p class="step__description_right">Students write their answers into these sheets</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="step step4">
-        <div class="number"><span>4</span></div>
-        <div class="container">
-          <div class="step__image">
-            <img class="blockright step4" src="img/step4.png"
-              alt="Point your phone at completed answer sheets and your grading is DONE!" />
-          </div>
-          <div class="step__description">
-
-            <h3 class="step__description_left">
-              Scan completed answer sheets with our appand your done!
-            </h3>
-            <p class="step__description_left">
-              SwiftGrade compares the student answer sheets to your answer key <br class="mob-break2">to
-              generate results
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="video-explain">
-        <h3 class="explainor-video">Explainor video</h3>
-        <iframe id="youtube_player" class="yt_player_iframe" width="100%" height="100%" src="http://www.youtube.com/embed/eDvSrMnL-8M?enablejsapi=1&version=3&playerapiid=ytplayer"  allowfullscreen="true" allowscriptaccess="always" frameborder="0"></iframe>
-      </div>
     </div>
+
+
+
+
 
     <section class="answer-types" id="answertypes">
       <div class="container">
@@ -396,7 +427,12 @@
         </div>
       </div>
     </section>
-    
+    <div class="discover-our-app">
+
+    </div>
+
+
+
     <section class="grading-superpowers ipad">
       <div class="container">
         <div class="col-md-6 final">
