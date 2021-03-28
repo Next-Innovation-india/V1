@@ -372,6 +372,11 @@ h1 {}
     }
 }
 
+.nav-fixed .menu * {
+    fill: #7a6eff !important;
+    color: #7a6eff !important;
+}
+
 .main-nav .logo img {
     width: 268px;
     height: auto;
@@ -428,7 +433,7 @@ section.main-scene {
     background: url(../img/bg2.jpg);
     background-size: cover;
     background-position: bottom;
-    padding-top: 137px;
+    padding-top: 30%;
     min-height: 100vh;
     background-repeat: no-repeat;
 }
@@ -736,6 +741,12 @@ header.main-nav {
     .main-nav .logo {
         display: none;
     }
+    .nav-fixed {
+        padding: 5px 20px;
+    }
+    .main-nav .container {
+        padding-top: 9px !important;
+    }
 
     .main-scene__text p.handwritten {
         display: none;
@@ -772,6 +783,9 @@ header.main-nav {
 
     .burger-menu{
         margin-top: -18px;
+    }
+    .nav-fixed .burger-menu{
+        margin-top: -9px;
     }
 
     .main-scene.mob{
@@ -855,6 +869,14 @@ header.main-nav {
         padding: 10px;
     }
 
+    .main-nav .logo {
+        margin-top: 0;
+        padding: 0;
+    }
+    .main-nav nav .menu {
+        top: -12px;
+    }
+
     .logoimg{
         display: none;
     }
@@ -865,6 +887,10 @@ header.main-nav {
 
     .main-nav .logo span{
         color: #fff;
+    }
+
+    .nav-fixed {
+        padding: 0 40px !important;
     }
 
     .main-nav nav .menu li a{
@@ -1150,9 +1176,7 @@ header.main-nav {
 }
 
 @media (width:720px) {
-    section.main-scene {
-        padding-top: 30%;
-    }
+
     .main-scene-bottom .paly-video {
         padding-top: 2%;
     }
@@ -1166,10 +1190,7 @@ header.main-nav {
     .nav-fixed {
         padding: 0 40px !important;
     }
-    .nav-fixed .menu * {
-        fill: #796eff !important;
-        color: #796eff !important;
-    }
+
 }
 
 
