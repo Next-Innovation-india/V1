@@ -688,9 +688,7 @@ header.main-nav {
         color: black !important;
     }
 
-    .main-nav nav .menu li:nth-of-type(2) a {
-        color: #fff !important;
-    }
+
 
     .blockleft {
         position: relative;
@@ -989,16 +987,7 @@ header.main-nav {
 
 @media (min-height: 1336px) {
 
-    .main-nav nav .menu li:nth-of-type(2) a{
-        color: #7a6eff !important;
-    }
-
-    .main-nav nav .menu li a{
-        fill: #7a6eff !important;
-        color: #7a6eff !important;
-    }
-
-    .menu *{
+    .nav-fixed .menu *{
         fill: #7a6eff !important;
         color: #7a6eff !important;
     }
