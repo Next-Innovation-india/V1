@@ -1,6 +1,6 @@
 *{
     /*width:auto;*/
-    font-family: 'Gordita';
+    font-family: 'Gordita-Regular';
 }
 
 .alert {
@@ -482,15 +482,34 @@ section.main-scene.bg2 {
 
 
 
-.discover-our-app .discover-image {
-    width: 50%;
-    float: left;
-}
-.discover-our-app .discover-description {
-    width: 50%;
-    float: right;
+.discover-our-app {
+    background-color: #f8f8f9;
+    display: flex;
 }
 
+.discover-our-app .discover-image {
+    width: 40%;
+    margin: 5%;
+
+}
+.discover-our-app .discover-description {
+    width: 60%;
+    margin: 11% 15%;
+}
+.discover-our-app h1 {
+    line-height: 2em;
+}
+.discover-our-app ul {
+    padding-left: 4%;
+}
+.discover-our-app ul li {
+    line-height: 2em;
+    font-size: 1.3em;
+}
+.stores img {
+    width: 30%;
+    margin: 5% 5% 0 0;
+}
 
 
 
@@ -513,6 +532,7 @@ section.main-scene.bg2 {
 .step3 .step__image img{
     padding-right: 0%;
 }
+
 
 .grading-superpowers .openpopup {
     margin-bottom: 365px;
@@ -653,7 +673,7 @@ section.main-scene.bg2 {
 }
     .main-scene-bottom .paly-video {
         width: 150px;
-        padding-top: 6%;
+        padding-top: 2%;
     }
 
 .logo {
@@ -720,6 +740,9 @@ header.main-nav {
     .main-nav .logo span{
         top: 15px;
         margin-left: -8px;
+    }
+    .discover-our-app .discover-description {
+        margin: 11% 2%;
     }
 
     .alert-text{
@@ -790,6 +813,21 @@ header.main-nav {
     }
     .main-nav .container {
         padding-top: 9px !important;
+    }
+    .discover-our-app {
+        flex-wrap: wrap;
+    }
+    .discover-our-app .discover-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: unset;
+    }
+    .discover-our-app .discover-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
     }
 
     .main-scene__text p.handwritten {
@@ -890,6 +928,9 @@ header.main-nav {
         margin-top:55px;
         text-align: center;
     }
+    .main-scene-bottom .paly-video {
+        padding-top: 5%;
+    }
 
 
 
@@ -904,11 +945,12 @@ header.main-nav {
 
 
 
+
 }
 .main-nav .container {
     padding-top: 0;
 }
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 767px) {
     .main-nav .container {
         padding: 10px;
     }
@@ -922,6 +964,14 @@ header.main-nav {
     }
     .main-nav nav .menu {
         top: -12px;
+    }
+    .discover-our-app .discover-description {
+        width: 60%;
+        margin: 11% 1% 7% 13%;
+    }
+    .discover-our-app .discover-image {
+        width: 40%;
+        margin: 0;
     }
 
     .logoimg{
@@ -995,6 +1045,9 @@ header.main-nav {
     .mob-break2{
         display: none;
     }
+    .main-nav .logo img.logoimg2{
+        display: none;
+    }
 }
 
 @media (max-width: 325px) {
@@ -1051,18 +1104,30 @@ header.main-nav {
     }
 
     .main-scene__text{
-        margin-top: -60px;
+        margin-bottom: 44%;
     }
 
 }
 
 
+
+
+
 @media (min-width: 1023px) and (max-width: 1025px){
+
+    .main-scene__image img {
+        width: 55%;
+    }
+    .main-scene .container {
+        justify-content: left;
+    }
 
     .main-nav nav .menu li:nth-of-type(2) a{
         color: #fff !important;
     }
-
+    .main-nav nav .menu {
+        top: -2px
+    }
     .main-nav .nav-fixed nav .menu li a{
         fill: #796eff !important;
         color: #796eff !important;
@@ -1095,21 +1160,23 @@ header.main-nav {
         display: flex;
         flex-direction: column-reverse !important;
     }
-    
-    .main-scene .container{
-        justify-content: center;
-    }
 
-    .main-scene__text{
-        margin-top: -60px;
+    section.main-scene {
+        min-height: 56vh;
+    }
+    .main-scene-bottom .openpopup {
+        background-color: #FFFFFF;
+        color: #796eff;
+    }
+    .play-icon img {
+        background-color: #fff;
+    }
+    .main-scene-bottom .paly-video p {
+        color: #FFFFFF;
     }
 
     .main-scene__image{
         max-width: none;
-    }
-
-    .logoimg{
-        display: none;
     }
 
     .swiftgrade{
@@ -1167,9 +1234,7 @@ header.main-nav {
         margin-top: -60px;
     }
 
-    .logoimg{
-        display: none;
-    }
+
 
     .swiftgrade{
         color: #fff !important;
@@ -1196,6 +1261,14 @@ header.main-nav {
     .main-nav .logo {
         margin-top: -2%;
     }
+    .main-nav nav .menu {
+        top: 2px
+    }
+    .discover-our-app .discover-description {
+        width: 60%;
+        margin: 10% 5%;
+    }
+
     .nav-fixed {
         padding: 10px 45px !important;
     }
@@ -1228,6 +1301,7 @@ header.main-nav {
     .nav-fixed {
         padding: 0 40px !important;
     }
+
 
 }
 
