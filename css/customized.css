@@ -165,7 +165,7 @@ img {}
 .grading-superpowers .title {
     width: 100%;
     padding-bottom: 15px;
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 
 .grading-superpowers .title {}
@@ -189,7 +189,7 @@ section.grading-superpowers {
 }
 
 .little-effort .title {
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 
 .answer-types__block {
@@ -202,11 +202,11 @@ section.grading-superpowers {
 }
 
 .answer-types .title, .answer-types p {
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 
 .answer-types .title {
-    font-weight: bold;
+    /*font-weight: bold;*/
     /* margin-bottom: 15px; */
 }
 
@@ -286,7 +286,7 @@ section.grading-superpowers {
 
 .howitwork .title {
     color: #292929;
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 
 h1 {}
