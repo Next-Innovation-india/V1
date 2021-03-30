@@ -384,6 +384,7 @@ h1 {}
 
 .nav-fixed {
     position: fixed;
+    max-width: 2560px;
     background-color: white;
     z-index: -1;
     padding: 5px 55px;
