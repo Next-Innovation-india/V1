@@ -1449,6 +1449,18 @@ header.main-nav {
     padding: 6px 25px;
     margin: 0 auto;
 }
+.tab + label:hover {
+    border: 1px solid #c1c1c1;
+    box-shadow: 1px 1px #b3b3b3;
+}
+.tab:first-of-type:not(:last-of-type):checked + label:hover {
+    border: 1px solid #daac0e;
+    box-shadow: 1px 1px #daac0e;
+}
+.tab:last-of-type:not(:first-of-type):checked + label:hover {
+                        border: 1px solid #1a2d9c;
+                        box-shadow: 1px 1px #1a2d9c;
+                    }
 
 .tab__content {
     padding: 10px 25px;
