@@ -142,15 +142,19 @@ img {}
     position: relative;
     display: inline;
 }
+
 .play-icon .img-top {
-    display: none;
     position: absolute;
     width: 80%;
     left: 0;
     z-index: 99;
+    opacity: 0;
+    transition: .4s ease;
 }
+
 .paly-video:hover .img-top {
     display: inline;
+    opacity: 1;
 }
 .play-icon img {
     width: 15%;
