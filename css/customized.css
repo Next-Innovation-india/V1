@@ -497,6 +497,10 @@ section.main-scene.bg2 {
     display: flex;
 }
 
+.discover-title {
+    font-size: 3.5em;
+    color: #161b26;
+}
 .discover-our-app .discover-image {
     width: 40%;
     margin: 5%;
@@ -510,15 +514,16 @@ section.main-scene.bg2 {
     line-height: 2em;
 }
 .discover-our-app ul {
-    padding-left: 4%;
+    padding-left: 3%;
 }
 .discover-our-app ul li {
     line-height: 2em;
     font-size: 1.3em;
+    color: #646f79;
 }
 .stores img {
-    width: 30%;
-    margin: 5% 5% 0 0;
+    width: 17%;
+    margin: 4% 5% 0 0;
 }
 
 
