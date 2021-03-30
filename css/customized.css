@@ -138,12 +138,26 @@ img {}
     float: left;
     margin-left: 10%;
 }
-
+.play-icon {
+    position: relative;
+    display: inline;
+}
+.play-icon .img-top {
+    display: none;
+    position: absolute;
+    width: 80%;
+    left: 0;
+    z-index: 99;
+}
+.paly-video:hover .img-top {
+    display: inline;
+}
 .play-icon img {
     width: 15%;
     display: inline-block;
     margin-left: 7px;
 }
+
 
 .step3 .step__image img {
     padding: 10px 10px 10px 0px;
