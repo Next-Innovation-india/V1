@@ -38,6 +38,9 @@
     color: #b7b7b7;
     font-style: italic;
 }
+.little-effort__block .effort p {
+    line-height: 1em;
+}
 .list {
     margin-right: 15px;
 }
