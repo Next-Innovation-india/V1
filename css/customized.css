@@ -1463,7 +1463,7 @@ header.main-nav {
                     }
 
 .tab__content {
-    padding: 10px 25px;
+    padding: 10px 0;
     background-color: transparent;
     position: absolute;
     width: 100%;
