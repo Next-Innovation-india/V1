@@ -46,7 +46,7 @@
 }
 
 .main-nav nav .menu {
-    top: -17px;
+    top: -10px;
 }
 
 .main-nav nav .menu li:nth-of-type(2) a:hover{
@@ -418,6 +418,7 @@ h1 {}
 .nav-fixed .logo img {
     width: 200px;
     height: auto;
+    top: 5px;
 }
 
 
