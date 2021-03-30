@@ -27,10 +27,17 @@
 }
 
 .tired{
-    display: inline-flex;
+    step__description_right    display: inline-flex;
 }
 
-
+.note {
+    font-size: 1em;
+    left: 10px;
+    position: relative;
+    line-height: 2em;
+    color: #b7b7b7;
+    font-style: italic;
+}
 .list {
     margin-right: 15px;
 }
