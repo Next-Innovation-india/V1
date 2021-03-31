@@ -944,8 +944,16 @@ header.main-nav {
 
     .container.mob{
         align-items: flex-start;
-        margin: 0 10px;
+        margin: 0 auto;
 
+    }
+    .main-scene__text p.main-text {
+        text-align: center;
+        font-size: 2em;
+    }
+    .main-scene-bottom {
+        display: grid;
+        margin: 0 auto;
     }
 
     .container.mob.1{
@@ -984,6 +992,8 @@ header.main-nav {
     }
     .main-scene-bottom .paly-video {
         padding-top: 5%;
+        margin: 0 auto;
+
     }
 
 
@@ -1333,6 +1343,10 @@ header.main-nav {
         top: 0;
         max-width: 80vw;
         margin: 10% auto;
+        display: flex;
+    }
+    .main-scene-bottom .paly-video {
+        width: 25%;
     }
     .howitwork .container {
         margin-top: -8%;
