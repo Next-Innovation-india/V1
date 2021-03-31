@@ -8,6 +8,13 @@ document.addEventListener("DOMContentLoaded", () => {
   autoSlider(".main-scene__image.desktop img");
 });
 
+document.querySelector(".mob").addEventListener("click", (e) => {
+    slider(e, ".main-scene__image.mob img");
+});
+document.addEventListener("DOMContentLoaded", () => {
+    autoSlider(".main-scene__image.mob img");
+});
+
 
 function autoSlider(img) {
   
@@ -66,6 +73,23 @@ function dotSlides(id) {
     container.classList.add('slide')
   }, 100);
   }
+function dotSlides1(id) {
+    let image = document.querySelectorAll(".main-scene__image.mob img");
+    console.log(image);
+    for (let i = 0; i < image.length; i++) {
+        const element = image[i];
+        element.style.display = "none";
+    }
+    index=id
+    image[index].style.display = "block";
+
+
+    container.className=container.className.replace('slide','')
+
+    setTimeout(() => {
+        container.classList.add('slide')
+    }, 100);
+}
 
 
 
