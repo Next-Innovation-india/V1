@@ -1,0 +1,61 @@
+.next{
+    right: 10px;
+    
+}
+.prev{
+    left: 0;
+}
+.next,.prev{
+    cursor: pointer;
+position: absolute;
+top: 50%;
+font-size: 50px;
+z-index: 10;
+}
+.slide{
+    animation: slide .8s;
+}
+.slidetxt{
+    animation: slidetxt 2s;
+}
+@keyframes slide{
+    from{
+        right: 0;
+        opacity: 1;
+    }
+    to{
+        right: 20vw;
+        opacity: 0;
+    }
+}
+@keyframes slidetxt{
+    from{
+        right: 0;
+        opacity: 1;
+    }
+    to{
+        right: 100vw;
+        opacity: 0;
+    }
+}
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    position: relative;
+    z-index: 1
+    ;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  .active{
+      background-color: green;
+  }
