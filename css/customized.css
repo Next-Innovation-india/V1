@@ -860,12 +860,28 @@ header.main-nav {
         flex-direction: column;
         justify-content: center;
         min-height: unset;
+        width: 100%;
     }
     .discover-our-app .discover-image {
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 100%;
+        margin: 0;
 
+    }
+    .discover-our-app .discover-title {
+        font-size: 2.5em;
+        text-align: center;
+    }
+    .discover-our-app ul li {
+        font-size: 1em;
+    }
+    .discover-our-app ul {
+        margin-top: 4%;
+    }
+    .stores img {
+        width: 40%;
     }
 
     .main-scene__text p.handwritten {
@@ -1320,6 +1336,13 @@ header.main-nav {
     }
     .howitwork .container {
         margin-top: -8%;
+    }
+    .discover-our-app .discover-image {
+        width: 50%;
+        margin-top: 15%;
+    }
+    .stores img {
+        width: 35%;
     }
 
 }
