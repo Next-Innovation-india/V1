@@ -7,7 +7,9 @@
   <meta name="format-detection" content="telephone=no" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+
 
   <!-- Google Tag Manager -->
 
@@ -118,7 +120,9 @@
 
 
   <main>
+
     <section class="main-scene mob">
+
       <a class="prev"><i class="fas fa-chevron-left"></i></a>
       <a class="next"><i class="fas fa-chevron-right"></i></a>
       <div id="slider">
@@ -182,7 +186,7 @@
 
 
       <div class="tab__content paper-test">
-
+        <div id="onlinetest-step2"></div>
         <div class="steps-block">
           <div class="step step1">
             <div class="number"><span>1</span></div>
@@ -219,8 +223,9 @@
             <div class="number"><span>3</span></div>
             <div class="container">
               <div class="step__image">
-                <img class="blockright step4" src="img/step4.png"
-                     alt="Point your phone at completed answer sheets and your grading is DONE!" />
+                <div id="online"></div>
+<!--                <img id="online-step2-image" class="blockright step4" src="img/step4.png"-->
+<!--                     alt="Point your phone at completed answer sheets and your grading is DONE!" />-->
               </div>
               <div class="step__description">
 
@@ -244,7 +249,9 @@
       </div>
 
       <div class="tab__content online-test">
+
         <div class="steps-block">
+
           <div class="step step1">
             <div class="number"><span>1</span></div>
             <div class="container">
@@ -264,7 +271,8 @@
             <div class="number number2"><span>2</span></div>
             <div class="container">
               <div class="step__image">
-                <img class="blockright" src="img/step2.png" alt="SwiftGrade generates student answer sheets" />
+                <div id="online-step2-image"></div>
+<!--                <img class="blockright" src="img/step2.png" alt="SwiftGrade generates student answer sheets" />-->
               </div>
               <div class="step__description">
 
@@ -588,6 +596,7 @@
 
   <script src="js/script.js"></script>
   <script src="js/slider.js"></script>
+  <script src="js/delivery.js"></script>
 
   <script>
     // Get the modal
