@@ -316,7 +316,7 @@ section.grading-superpowers {
 
 .howitwork .title {
     color: #292929;
-    /*font-weight: bold;*/
+    font-weight: bold;
 }
 
 h1 {}
@@ -1544,7 +1544,6 @@ header.main-nav {
 .footer-mobile {
     margin-left: 27px;
 }
-
 
 
 

@@ -8,7 +8,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://d3js.org/d3.v3.js"></script>
+
 
 
   <!-- Google Tag Manager -->
@@ -25,7 +27,8 @@
 
           'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
 
-    })(window, document, 'script', 'dataLayer', 'GTM-K8MJMMR');</script>
+    })(window, document, 'script', 'dataLayer', 'GTM-K8MJMMR');
+  </script>
 
   <!-- End Google Tag Manager -->
 
@@ -176,17 +179,17 @@
     <div class="tab-wrap">
 
       <!-- active tab on page load gets checked attribute -->
-      <input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
+      <input type="radio" id="tab1" name="tabGroup1" class="tab atab" checked>
       <label for="tab1">Paper test</label>
 
-      <input type="radio" id="tab2" name="tabGroup1" class="tab">
+      <input type="radio" id="tab2" name="tabGroup1" class="tab btab">
       <label for="tab2">Online test</label>
 
 
 
 
       <div class="tab__content paper-test">
-        <div id="onlinetest-step2"></div>
+
         <div class="steps-block">
           <div class="step step1">
             <div class="number"><span>1</span></div>
@@ -207,7 +210,8 @@
             <div class="number"><span>2</span></div>
             <div class="container">
               <div class="step__image">
-                <img class="blockleft" src="img/step2.png" alt="Distribute these answer sheets along with your test" />
+                <div id="onlinetest-step2"></div>
+<!--                <img class="blockleft" src="img/step2.png" alt="Distribute these answer sheets along with your test" />-->
               </div>
               <div class="step__description">
 
@@ -272,6 +276,7 @@
             <div class="container">
               <div class="step__image">
                 <div id="online-step2-image"></div>
+                <script src="js/delivery.js"></script>
 <!--                <img class="blockright" src="img/step2.png" alt="SwiftGrade generates student answer sheets" />-->
               </div>
               <div class="step__description">
@@ -632,6 +637,8 @@
 
 
   </script>
+
+
 </body>
 
 </html>
