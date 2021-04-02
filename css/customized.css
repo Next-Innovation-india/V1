@@ -173,6 +173,9 @@ img {}
     display: inline-block;
     margin-left: 7px;
 }
+.paly-video:hover p {
+    color: #5646ff;
+}
 
 
 .step3 .step__image img {
