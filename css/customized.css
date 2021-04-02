@@ -58,7 +58,7 @@
 }
 
 .main-nav nav .menu {
-    top: -10px;
+    top: 1px;
 }
 
 .main-nav nav .menu li:nth-of-type(2) a:hover{
@@ -449,9 +449,9 @@ h1 {}
     height: auto;
 }
 .nav-fixed .logo img {
-    width: 200px;
+    width: 160px;
     height: auto;
-    top: 5px;
+    top: 9px;
 }
 
 
