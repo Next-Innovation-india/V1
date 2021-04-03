@@ -575,6 +575,10 @@ section.main-scene.bg2 {
     *{
         /*width:auto;*/
     }
+    .video-explain iframe {
+        margin: 0px 5%;
+        width: 90%;
+    }
 
     .step3 .step__image img{
         padding-right: 0%;
