@@ -128,9 +128,9 @@
     <section class="full">
 
       <section class="wrap mySlides">
-        <section class="pull-left">
-          <h2>Grade with your phone's camera</h2>
-          <p>(Yes, including handwritten answers)</p>
+        <div class="main-scene__text pull-left">
+          <p class="main-text">Grade with your <br class="mob-break2"> phone's camera</p>
+          <p class="handwritten">(Yes, including handwritten answers)</p>
           <section class="buttons">
             <a href="#" class="btn openpopup">Sign up for free</a>
             <a href="#" class="paly-video" id="play-video">
@@ -141,18 +141,18 @@
                 </span>
             </a>
           </section>
-        </section>
-        <section class="pull-right">
+        </div>
+        <div class="main-scene__image pull-right">
           <img class="with-p" src="img/iphonepaper.png" alt="slider1">
           <img class="no-p" src="img/nopencil.png" alt="slider1">
-        </section>
+        </div>
       </section>
 
       <!-- Slider 2 -->
       <section class="wrap mySlides">
-        <section class="pull-left">
-          <h2>Grade with your phone's camera</h2>
-          <p>(Yes, including handwritten answers)</p>
+        <div class="main-scene__text pull-left">
+          <p class="main-text">Grade with your <br class="mob-break2"> phone's camera</p>
+          <p class="handwritten">(Yes, including handwritten answers)</p>
           <section class="buttons">
             <a href="#" class="btn openpopup">Sign up for free</a>
             <a href="#" class="paly-video" id="play-video2">
@@ -163,10 +163,10 @@
                 </span>
             </a>
           </section>
-        </section>
-        <section class="pull-right">
+        </div>
+        <div class="main-scene__image pull-right">
           <img src="img/step2.png" alt="slider2">
-        </section>
+        </div>
       </section>
 
       <a class="prev" onclick="plusSlides(-1)"><img src="img/prev.svg" width="32" height="32" alt="prev"></a>
@@ -191,31 +191,47 @@
 
 
   <div class="tab-wrap">
-
     <!-- active tab on page load gets checked attribute -->
-    <input type="radio" id="tab1" name="tabGroup1" class="tab atab" checked>
+    <input
+            type="radio"
+            id="tab1"
+            name="tabGroup1"
+            class="tab atab"
+            checked
+    />
     <label for="tab1">Paper test</label>
 
-    <input type="radio" id="tab2" name="tabGroup1" class="tab btab" onclick="playanimation()">
+    <input
+            type="radio"
+            id="tab2"
+            name="tabGroup1"
+            class="tab btab"
+            onclick="playanimation()"
+    />
     <label for="tab2">Online test</label>
 
-
-
-
     <div class="tab__content paper-test">
-
       <div class="steps-block">
         <div class="step step1">
           <div class="number"><span>1</span></div>
           <div class="container">
             <div class="step__image">
-              <img class="blockleft" src="img/step1.png" alt="Input the answers to your test" />
+              <img
+                      class="blockleft"
+                      src="img/step1.png"
+                      alt="Input the answers to your test"
+              />
             </div>
             <div class="step__description">
-
               <h3 class="step__description_right">Create an answer key</h3>
-              <p class="step__description_right">Only input your answers, no need to re-create your entire test</p>
-              <p class="note">Note*  &nbsp;This step is the same for both paper and online tests</p>
+              <p class="step__description_right">
+                Only input your answers, no need to re-create your entire
+                test
+              </p>
+              <p class="note">
+                Note* &nbsp;This step is the same for both paper and online
+                tests
+              </p>
             </div>
           </div>
         </div>
@@ -224,15 +240,16 @@
           <div class="number"><span>2</span></div>
           <div class="container">
             <div class="step__image">
-              <div id="onlinetest-step2"></div>
-              <!--                <img class="blockleft" src="img/step2.png" alt="Distribute these answer sheets along with your test" />-->
+              <img class="blockleft" src="img/step2.png" alt="Distribute these answer sheets along with your test" />
             </div>
             <div class="step__description">
-
               <h3 class="step__description_right">
-                Distribute our answer sheets along with <br class="mob-break">your test
+                Distribute our answer sheets along with
+                <br class="mob-break" />your test
               </h3>
-              <p class="step__description_right">Students write their answers into these sheets</p>
+              <p class="step__description_right">
+                Students write their answers into these sheets
+              </p>
             </div>
           </div>
         </div>
@@ -246,13 +263,12 @@
               <!--                     alt="Point your phone at completed answer sheets and your grading is DONE!" />-->
             </div>
             <div class="step__description">
-
               <h3 class="step__description_left">
                 Scan completed answer sheets with our app and your done!
               </h3>
               <p class="step__description_left">
-                SwiftGrade compares the student answer sheets to your answer key <br class="mob-break2">to
-                generate results
+                SwiftGrade compares the student answer sheets to your answer
+                key <br class="mob-break2" />to generate results
               </p>
             </div>
           </div>
@@ -260,43 +276,61 @@
 
         <div class="video-explain">
           <h3 class="explainor-video">Explainer video</h3>
-          <iframe class="yt_player_iframe" width="100%" height="100%" src="http://www.youtube.com/embed/eDvSrMnL-8M?enablejsapi=1&version=3&playerapiid=ytplayer"  allowfullscreen="true" allowscriptaccess="always" frameborder="0"></iframe>
+          <iframe
+                  id="youtube_player"
+                  class="yt_player_iframe"
+                  width="100%"
+                  height="100%"
+                  src="http://www.youtube.com/embed/eDvSrMnL-8M?enablejsapi=1&version=3&playerapiid=ytplayer"
+                  allowfullscreen="true"
+                  allowscriptaccess="always"
+                  frameborder="0"
+          ></iframe>
         </div>
       </div>
-
     </div>
 
     <div class="tab__content online-test">
-
       <div class="steps-block">
-
         <div class="step step1">
           <div class="number"><span>1</span></div>
           <div class="container">
             <div class="step__image">
-              <img class="blockleft" src="img/step1.png" alt="Input the answers to your test" />
+              <img
+                      class="blockleft"
+                      src="img/step1.png"
+                      alt="Input the answers to your test"
+              />
             </div>
             <div class="step__description">
-
               <h3 class="step__description_right">Create an answer key</h3>
-              <p class="step__description_right">Only input your answers, no need to re-create your entire test</p>
-              <p class="note">Note*  &nbsp;This step is the same for both paper and online tests</p>
+              <p class="step__description_right">
+                Only input your answers, no need to re-create your entire
+                test
+              </p>
+              <p class="note">
+                Note* &nbsp;This step is the same for both paper and online
+                tests
+              </p>
             </div>
           </div>
         </div>
 
         <div class="step step2">
-          <div class="number number2"><span>2</span></div>
+          <div class="number"><span>2</span></div>
           <div class="container">
             <div class="step__image">
-              <div id="online-step2-image"></div>
-              <script src="js/delivery.js"></script>
-              <!--                <img class="blockright" src="img/step2.png" alt="SwiftGrade generates student answer sheets" />-->
+              <div id="onlinetest-step2"></div>
+              <!--                <img class="blockleft" src="img/step2.png" alt="Distribute these answer sheets along with your test" />-->
             </div>
             <div class="step__description">
-
-              <h3 class="step__description_left">Attach your test and release it to students</h3>
-              <p class="step__description_left">Our online answer sheets will be sent along with your test</p>
+              <h3 class="step__description_right">
+                Distribute our answer sheets along with
+                <br class="mob-break" />your test
+              </h3>
+              <p class="step__description_right">
+                Students write their answers into these sheets
+              </p>
             </div>
           </div>
         </div>
@@ -305,27 +339,42 @@
           <div class="number"><span>3</span></div>
           <div class="container">
             <div class="step__image">
-              <img class="blockleft" src="img/step3.png" alt="Distribute these answer sheets along with your test" />
+              <img
+                      class="blockleft"
+                      src="img/step3.png"
+                      alt="Distribute these answer sheets along with your test"
+              />
             </div>
             <div class="step__description">
-
               <h3 class="step__description_right">
-                Students answer in our answer sheets.<br class="mob-break"> &nbsp;When they click submit, the results are ready!
+                Students answer in our answer sheets.<br
+                      class="mob-break"
+              />
+                &nbsp;When they click submit, the results are ready!
               </h3>
-              <p class="step__description_right">SwiftGrade compares the student answer sheets to your answer key to generate results </p>
+              <p class="step__description_right">
+                SwiftGrade compares the student answer sheets to your answer
+                key to generate results
+              </p>
             </div>
           </div>
         </div>
 
-
         <div class="video-explain">
           <h3 class="explainor-video">Explainer video</h3>
-          <iframe class="yt_player_iframe" width="100%" height="100%" src="http://www.youtube.com/embed/eDvSrMnL-8M?enablejsapi=1&version=3&playerapiid=ytplayer"  allowfullscreen="true" allowscriptaccess="always" frameborder="0"></iframe>
+          <iframe
+                  id="youtube_player"
+                  class="yt_player_iframe"
+                  width="100%"
+                  height="100%"
+                  src="http://www.youtube.com/embed/eDvSrMnL-8M?enablejsapi=1&version=3&playerapiid=ytplayer"
+                  allowfullscreen="true"
+                  allowscriptaccess="always"
+                  frameborder="0"
+          ></iframe>
         </div>
       </div>
     </div>
-
-
   </div>
 
 
