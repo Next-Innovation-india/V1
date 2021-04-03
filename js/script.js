@@ -102,7 +102,7 @@ function playanimation() {
     animationData: logoSvgData
   })
 
-animation.play();
+  animation.play();
 
 
 }
