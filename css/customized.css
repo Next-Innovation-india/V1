@@ -43,7 +43,7 @@
     font-style: italic;
 }
 .little-effort__block .effort p {
-    line-height: 1em;
+    line-height: 1.3em;
 }
 .list {
     margin-right: 15px;
@@ -195,7 +195,7 @@ img {}
 .grading-superpowers .title {
     width: 100%;
     padding-bottom: 15px;
-    /*font-weight: bold;*/
+    font-weight: bold;
 }
 
 .grading-superpowers .title {}
@@ -528,7 +528,7 @@ section.main-scene.bg2 {
 }
 
 .discover-title {
-    font-size: 3.5em;
+    font-size: 3.3em;
     color: #161b26;
 }
 .discover-our-app .discover-image {

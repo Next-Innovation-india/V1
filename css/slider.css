@@ -73,8 +73,8 @@
 }
 .dot {
     cursor: pointer;
-    height: 15px;
-    width: 15px;
+    height: 13px;
+    width: 13px;
     margin: 0 2px;
     background-color: RGBA(255,255,255,0);
     border: solid 2px #fff;
