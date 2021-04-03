@@ -98,7 +98,6 @@
 }
 .buttons .paly-video p{
     color: #7a6eff;
-    font-weight: 500;
     float: left;
     text-align: left;
     padding: 0 0 15px 0;
@@ -200,5 +199,6 @@
     .buttons .paly-video p{
         margin-left: 0;
         font-size: 12px;
+        float: unset;
     }
 }
