@@ -78,7 +78,7 @@
 
 </head>
 
-<body>
+<body onload="playanimation()">
 <!-- Google Tag Manager (noscript) -->
 
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8MJMMR" height="0" width="0"
@@ -206,7 +206,6 @@
             id="tab2"
             name="tabGroup1"
             class="tab btab"
-            onclick="playanimation()"
     />
     <label for="tab2">Online test</label>
 
@@ -240,7 +239,8 @@
           <div class="number"><span>2</span></div>
           <div class="container">
             <div class="step__image">
-              <img class="blockleft" src="img/step2.png" alt="Distribute these answer sheets along with your test" />
+              <div id="papertest-step2"></div>
+<!--              <img class="blockleft" src="img/step2.png" alt="Distribute these answer sheets along with your test" />-->
             </div>
             <div class="step__description">
               <h3 class="step__description_right">
