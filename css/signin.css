@@ -1,0 +1,365 @@
+@font-face {
+    font-family: 'Gordita Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Gordita Regular'), url('../fonts/Gordita-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Gordita ';
+    src: local('../fonts/Gordita  Regular'), local('../fonts/Gordita--Regular'), url('../fonts/Gordita-Regular.woff2') format('woff2'), url('../fonts/Gordita-Regular.woff') format('woff'), url('../fonts/Gordita-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gordita Regular Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Gordita Regular Italic'), url('../fonts/Gordita Regular Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Gordita Thin';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Gordita Thin'), url('../fonts/Gordita Thin.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Gordita Thin Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Gordita Thin Italic'), url('../fonts/Gordita Thin Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Gordita Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Gordita Light'), url('../fonts/Gordita Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Gordita Light Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Gordita Light Italic'), url('../fonts/Gordita Light Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Gordita Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Gordita-Medium'), url('../fonts/Gordita-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Gordita Medium Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Gordita-Medium Italic'), url('../fonts/Gordita-Medium Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Gordita Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Gordita Bold'), url('../fonts/Gordita Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Gordita Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Gordita Bold Italic'), url('../fonts/Gordita Bold Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Gordita Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Gordita Black'), url('../fonts/Gordita Black.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Gordita Black Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Gordita Black Italic'), url('../fonts/Gordita Black Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Gordita Ultra';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Gordita Ultra'), url('../fonts/Gordita Ultra.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Gordita Ultra Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Gordita Ultra Italic'), url('../fonts/Gordita Ultra Italic.woff') format('woff');
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.top-navbar {
+    padding: 10px 64px 0;
+    transition: box-shadow .15s ease-in-out;
+    z-index: 999;
+    position: relative;
+}
+
+.top-navbar .logo img {
+    position: relative;
+    top: -3px;
+}
+
+.top-navbar .logo a {
+    text-decoration: none;
+}
+
+.top-navbar .logo {
+    font: 24px 'Gordita Medium';
+}
+
+.top-navbar .logo span {
+    position: relative;
+    left: -5px;
+    top: -5px;
+    color: #273347;
+}
+
+.signin .signin-inner {
+    text-align: center;
+    width: 480px;
+    display: inline-block;
+    position: absolute;
+    top: 22%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+	left: 50%;
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.signin-inner img.hero-illustration {
+    width: 260px;
+    margin: 0 auto;
+}
+
+.signin-inner h2 {
+    font-size: 40px;
+    font-weight: 400;
+	line-height: 1.5;
+    font-family: 'Gordita regular';
+    color: #151b26;
+	margin: 20px 0;
+}
+.signin-or {
+    color: #9ca6af;
+    padding-bottom: 18px;
+    padding-top: 18px;
+    position: relative;
+    text-align: center;
+    font-family: 'Gordita regular';
+    width: 70%;
+    margin: 0 auto;
+}
+
+.signin-or span {
+    font-family: 'Gordita regular';
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.signin-form-col form input:focus { 
+    outline: 0;
+}
+
+.signin-form-col form input::placeholder {
+    color: #b7bfc6;
+    letter-spacing: .5px;
+    line-height: 50px;
+}
+
+.signin-form-col .sigin-btn{
+    font-family: 'Gordita medium';
+    line-height: 50px;
+    padding: 0 24px;
+    width: 100%;
+    background-color: #fff;
+    color:#796eff;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 2px solid #796eff;
+    cursor: pointer;
+    font-size: 18px;
+	letter-spacing: .5px;
+	outline: none !important;
+	margin: 20px 0.5em 0px 0.5em;
+}
+.signin-form-col .sigin-btn:hover{
+    background-color: #e2dfff75;
+}
+.signin-form-col .sigin-btn.active{
+	 background-color: #796eff;
+     color:#fff;
+	
+}
+.signin-form-col .sigin-btn.active:hover {
+    background-color: #635ac7;
+    color: #fff;
+	border: 2px solid #635ac7;
+}
+
+@media(max-width:577px) {
+    .top-navbar {
+        padding: 10px 20px 5px;
+        box-shadow: 0 2px 12px 0 rgba(36, 50, 66, .075);
+        width: 100%;
+        background: #fff;
+        box-sizing: border-box;
+    }
+    .signin .signin-inner {
+        width: 85%;
+        padding-top: 10px;
+        margin-top: 0px;
+        justify-content: center;
+        top: 30%;
+
+    }
+    .signin-inner h2 {
+        font-size: 30px;
+    }
+    #sticky-navbar a img {
+        width: 150px;
+    }
+    .google-action-btn button {
+        width: 100%;
+        font-size: 16px;
+    }
+    .google-action-btn button img {
+        left: 15px;
+    }
+    .signin-form-col .sigin-btn {
+        font-size: 16px;
+		margin: 20px 0 0px 0;
+    }
+    .signin .signin-inner .hero-illustration {
+        width: 200px;
+        display: block;
+        margin: 0 auto;
+    }
+    .top-navbar .logo img {
+        height: 45px;
+    }
+    .top-navbar .logo {
+        font: 19px "Gordita Medium";
+    }
+    .signin-or {
+        width: 80%;
+    }
+}
+
+@media(min-width:577px) and (max-width:1024px) {
+    .top-navbar {
+        padding: 10px 35px;
+        box-shadow: 0 2px 12px 0 rgba(36, 50, 66, .075);
+        height: 60px;
+        display: flex;
+    }
+    .google-action-btn button {
+        font-size: 16px;
+    }
+	
+    .signin .signin-inner {
+        width: 480px;
+        padding-top: 20px;
+        flex-direction: column;
+        justify-content: center;
+        top: 30%;
+    }
+    .signin .signin-inner .hero-illustration {
+        width: 250px;
+        display: block;
+        margin: 0 auto;
+    }
+    .signin .signin-inner h2 {
+        font-size: 40px;
+        margin: 27px 0;
+        margin: 27px 0;
+    }
+    .google-action-btn button {
+        width: 90%;
+    }
+	.signin-form-col .sigin-btn {
+        font-size: 16px;
+		margin: 20px 0 0px 0;
+    }
+}
+
+
+/* Surface book */
+
+
+/* ipdad pro */
+
+@media only screen and (min-width:1024px) and (max-width: 1366px) {
+    .signin .signin-inner {
+        width: 480px;
+        margin-top: 0px;
+        flex-direction: column;
+        justify-content: center;
+        top: 28%;
+    }
+    .signin .signin-inner .hero-illustration {
+        width: 240px;
+        display: block;
+        margin: 0 auto;
+    }
+    .signin .signin-inner h2 {
+        font-size: 40px;
+    }
+    .signin {
+        padding: 0 0 65px;
+    }
+	.signin-form-col .sigin-btn {
+        font-size: 16px;
+		margin: 20px 0 0px 0;
+    }
+}
+
+
+/* iPhone 5*/
+
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+    .signin .signin-inner .hero-illustration {
+        width: 160px;
+    }
+    .signin-inner h2 {
+        font-size: 30px;
+    }
+    .google-action-btn {
+        position: relative;
+        margin-top: 15px;
+    }
+	.signin-form-col .sigin-btn {
+        font-size: 16px;
+		margin: 20px 0 0px 0;
+    }
+	
+}
+
+

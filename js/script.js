@@ -27,11 +27,11 @@
     });
   }
 
-  document.addEventListener('mousedown', function (e) {
-    if (e.target.closest('.popup__inner') === null) {
-      popup.style.display = 'none';
-    }
-  });
+  // document.addEventListener('mousedown', function (e) {
+  //   if (e.target.closest('.popup__inner') === null) {
+  //     popup.style.display = 'none';
+  //   }
+  // });
 
 })();
 

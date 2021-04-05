@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create account</title>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/teacher.css">
+
+</head>
+
+<body>
+    <!-- Sign in page -->
+    <div class="signin">
+        <div class="top-navbar ">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.svg" alt="SwiftGrade" width="50" height="58">
+                    <span>SwiftGrade</span>
+                </a>
+            </div>
+        </div>
+        <div class="signin-inner">
+            <img src="img/registration-page.svg" alt="Boy standing" class="hero-illustration">
+            <h2>Teacher sign up</h2>
+<!--            <div class="google-action-btn">-->
+<!--                <button type="button"> <img src="img/google-hangouts.svg" alt="Google icon"> Use google account </button>-->
+<!--            </div>-->
+<!--            <div class="signin-or">-->
+<!--                <span>or</span>-->
+<!--            </div>-->
+            <div class="signin-form-col">
+                <form action="">
+                    <input type="text" placeholder="Email">
+                    <div class="r-password-input">
+                        <input type="password" placeholder="Password " id="password-field">
+                        <span class="field-icon toggle-password  open-eye" toggle="#password-field"></span>
+                    </div>
+                    <button type="button" class=" sigin-btn" >Sign up</button>
+                </form>
+                <p class="terms-text">
+                    By signing up, I agree to SwiftGrade's
+                    <a href="#">Privacy Policy </a> and <a href="#">Terms of Service</a> . <br> SwiftGrade is GDPR, PIPEDA and FIPPA/FOIPA compliant.
+                </p>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- ./End sign in page -->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <a href="#">
+                    <img src="img/logo-bottom.svg" alt="SwiftGrade" width="81" height="97">
+                    <span>SwiftGrade</span>
+                </a>
+                <p class="copy">Copyright ©</p>
+                <p class="copy">2020 Educora Inc.</p>
+            </div>
+            <div class="footer-menu">
+                <div class="footer-menu__item">
+                    <h3>company</h3>
+                    <ul class="footer-menu__item-list">
+                        <li><a href="#">Terms and conditions</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-menu__item">
+                    <h3>Product</h3>
+                    <ul class="footer-menu__item-list">
+                        <li><a href="#howitworks">How it works</a></li>
+                        <li><a href="#answertypes">Answer types</a></li>
+                        <li><a href="#benefits">Benefits</a></li>
+                    </ul>
+                </div>
+                <div class="footer-menu__item">
+                    <h3>contact</h3>
+                    <ul class="footer-menu__item-list">
+                        <li><a href="mailto:hello@goswiftgrade.com">hello@goswiftgrade.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script>
+    $(".toggle-password").click(function() {
+
+        $(this).toggleClass("open-eye close-eye");
+        var input = $($(this).attr("toggle"));
+        if (input.attr("type") == "password") {
+            input.attr("type", "text");
+        } else {
+            input.attr("type", "password");
+        }
+    });
+</script>
+
+</html>

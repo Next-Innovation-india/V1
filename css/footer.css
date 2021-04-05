@@ -1,0 +1,166 @@
+@font-face {
+    font-family: "Gordita-Medium";
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/Gordita-Medium.eot");
+    src: url("../fonts/Gordita-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Gordita-Medium.woff2") format("woff2"), url("../fonts/Gordita-Medium.woff") format("woff"), url("../fonts/Gordita-Medium.ttf") format("truetype"), url("../fonts/Gordita-Medium.svg#Gordita Medium") format("svg")
+}
+
+@font-face {
+    font-family: "Gordita-Regular";
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/Gordita-Regular.eot");
+    src: local("../fonts/Gordita Regular"), local("Gordita-Regular"), url("../fonts/Gordita-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Gordita-Regular.woff2") format("woff2"), url("../fonts/Gordita-Regular.woff") format("woff"), url("../fonts/Gordita-Regular.ttf") format("truetype")
+}
+
+.footer {
+    position: relative;
+    background: #4e4d5e;
+    color: #e3e3e3
+}
+
+.footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    max-width: 100%;
+    width: calc(100% - 48px);
+    padding-top: 17px;
+    padding-bottom: 17px
+}
+
+@media screen and (max-width: 576px) {
+    .footer .container {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        padding-top: 27px;
+        padding-bottom: 37px
+    }
+}
+
+.footer .footer-logo {
+    text-align: center
+}
+
+@media screen and (max-width: 576px) {
+    .footer .footer-logo {
+        width: 100%;
+        order: 1
+    }
+}
+
+.footer .footer-logo a {
+    color: inherit
+}
+
+.footer .footer-logo span {
+    display: none;
+    font-size: 24px
+}
+
+@media screen and (max-width: 576px) {
+    .footer .footer-logo span {
+        padding-top: 10px;
+        display: block
+    }
+}
+
+.footer .footer-logo .copy {
+    font-size: 12px;
+    line-height: 16px;
+    color: inherit;
+    padding-top: 4px
+}
+
+.footer .footer-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+@media screen and (max-width: 576px) {
+    .footer .footer-menu {
+        width: 100%;
+        order: 0;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap
+    }
+}
+
+.footer .footer-menu__item {
+    padding: 0 30px
+}
+
+@media screen and (max-width: 768px) {
+    .footer .footer-menu__item {
+        padding: 0 20px
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .footer .footer-menu__item {
+        padding: 0 0 20px;
+        width: 100%;
+        text-align: center
+    }
+}
+
+.footer .footer-menu__item h3 {
+    text-transform: uppercase;
+    font: 14px/19px "Gordita-Medium";
+    padding-bottom: 6px
+}
+
+.footer .footer-menu__item-list li {
+    display: block;
+    padding-bottom: 6px
+}
+
+@media screen and (max-width: 576px) {
+    .footer .footer-menu__item-list li {
+        padding-bottom: 15px
+    }
+}
+
+.footer .footer-menu__item-list li a {
+    font-size: 14px;
+    line-height: 19px;
+    color: inherit
+}
+
+@media screen and (max-width: 1024px) {
+    .footer .footer-menu__item-list li a {
+        font-size: 11px;
+        line-height: 16px
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .footer .footer-menu__item-list li a {
+        font-size: 16px;
+        padding: 0
+    }
+}
+
+.footer .footer-menu__item-list li a:hover,
+.footer .footer-menu__item-list li a:focus {
+    color: #fff;
+    text-decoration: underline
+}
+
+.footer .footer-menu__item-list li:last-child a {
+    padding-right: 0
+}
+
+.footer .footer-menu__item:last-child {
+    padding-right: 0
+}

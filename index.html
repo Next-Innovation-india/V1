@@ -114,7 +114,7 @@
           </svg></a>
         </li>
         <li class="list"><a href="#">Log In</a></li>
-        <li><a href="#" class="btn3 openpopup">Sign up</a></li>
+        <li><a href="create-account.html" class="btn3 openpopup">Sign up</a></li>
       </ul>
     </nav>
   </div>
@@ -124,15 +124,15 @@
 <main>
   <!-- Start Slider -->
   <section class="main-scene mob">
-    <!-- Slider 1 -->
     <section class="full">
 
-      <section class="wrap mySlides">
+      <!-- Slider 1 -->
+      <section class="wrap mySlides" id="s1">
         <div class="main-scene__text pull-left">
           <p class="main-text">Grade with your <br class="mob-break2"> phone's camera</p>
           <p class="handwritten">(Yes, including handwritten answers)</p>
           <section class="buttons">
-            <a href="#" class="btn openpopup">Sign up for free</a>
+            <a href="create-account.html" class="btn openpopup">Sign up for free</a>
             <a href="#" class="paly-video" id="play-video">
               <p>Watch video</p>
               <span class="play-icon">
@@ -149,12 +149,12 @@
       </section>
 
       <!-- Slider 2 -->
-      <section class="wrap mySlides">
+      <section class="wrap mySlides" id="s2">
         <div class="main-scene__text pull-left">
           <p class="main-text">Grade with your <br class="mob-break2"> phone's camera</p>
           <p class="handwritten">(Yes, including handwritten answers)</p>
           <section class="buttons">
-            <a href="#" class="btn openpopup">Sign up for free</a>
+            <a href="create-account.html" class="btn openpopup">Sign up for free</a>
             <a href="#" class="paly-video" id="play-video2">
               <p>Watch video</p>
               <span class="play-icon">
@@ -169,8 +169,8 @@
         </div>
       </section>
 
-<!--      <a class="prev" onclick="plusSlides(-1)"><img src="img/prev.svg" width="32" height="32" alt="prev"></a>-->
-<!--      <a class="next" id="next" onclick="plusSlides(1)"><img src="img/next.svg" width="32" height="32" alt="next"></a>-->
+      <a class="prev" onclick="PrevSlides(-1)"><img src="img/prev.svg" width="32" height="32" alt="prev"></a>
+      <a class="next" id="next" onclick="NextSlides(1)"><img src="img/next.svg" width="32" height="32" alt="next"></a>
 
       <section class="dots">
         <span class="dot" onclick="currentSlide(1)"></span>
@@ -574,7 +574,7 @@
     <div class="container">
       <div class="col-md-6 final">
         <h2 class="title ipad2">Unleash your true <br> grading power today!</h2>
-        <a href="#" class="btn2 openpopup">Try for free</a>
+        <a href="create-account.html" class="btn2 openpopup">Try for free</a>
       </div>
       <div class=col-md-6>
       </div>
@@ -637,69 +637,18 @@
   </div>
 </footer>
 
-<div class="popup">
-  <div class="popup__inner">
-    <h1 style='margin-bottom: 20px'>Sign up now and get 1 year free!</h1>
-    <form id="form_id" method="" action="" onsubmit="return validate(event)">
-      <input type="text" id="email" name="email" class="email" placeholder="Email" />
-      <p class="only">Only 500 early access spots available</p>
-      <input style='margin-top: 20px' type="submit" value="Sign me up" class="btn" />
-    </form>
-  </div>
-</div>
+<!--<div class="popup">-->
+<!--  <div class="popup__inner">-->
+<!--    <h1 style='margin-bottom: 20px'>Sign up now and get 1 year free!</h1>-->
+<!--    <form id="form_id" method="" action="" onsubmit="return validate(event)">-->
+<!--      <input type="text" id="email" name="email" class="email" placeholder="Email" />-->
+<!--      <p class="only">Only 500 early access spots available</p>-->
+<!--      <input style='margin-top: 20px' type="submit" value="Sign me up" class="btn" />-->
+<!--    </form>-->
+<!--  </div>-->
+<!--</div>-->
 
-<!-- popup after successful sending -->
-<div class="popup-thank-you">
-  <div class="popup-thank-you__inner">
-    <div class="close" onclick="location.reload()">
-      <img src="img/close.svg" alt="close" width="18" height="18" />
-    </div>
-    <h3>Sign up successful!</h3>
-    <p style='font-size: 100%'>You will receive 1 year free starting from the date we launch.</p>
-    <p style='font-size: 100%; margin-top:10px'>We will email you when we launch, which is estimated to be January 1,
-      2021</p>
-    <input style="font-size: 16px; margin-top: 20px;" type="button" id="finish-btn" value="Finish" class="btn" />
-  </div>
-</div>
-
-<script src="js/script.js"></script>
-<script src="js/delivery.js"></script>
-
-<script>
-  // Get the modal
-  var modal = document.getElementById("myModal");
-
-  // Get the button that opens the modal
-  var btn = document.getElementById("play-video");
-
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
-
-  // When the user clicks on the button, open the modal
-  btn.onclick = function() {
-    modal.style.display = "block";
-  }
-
-  // When the user clicks on <span> (x), close the modal
-  span.onclick = function() {
-    $('.yt_player_iframe').each(function(){
-      this.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*')
-    });
-    modal.style.display = "none";
-  }
-
-  // // When the user clicks anywhere outside of the modal, close it
-  // window.onclick = function(event) {
-  //   if (event.target == modal) {
-  //     modal.style.display = "none";
-  //   }
-  // }
-
-
-
-
-</script>
-
+<!-- Create Account Page -->
 
 </body>
 

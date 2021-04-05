@@ -1,0 +1,501 @@
+@font-face {
+    font-family: 'Gordita Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Gordita Regular'), url('../fonts/Gordita-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Gordita ';
+    src: local('../fonts/Gordita  Regular'), local('../fonts/Gordita--Regular'), url('../fonts/Gordita-Regular.woff2') format('woff2'), url('../fonts/Gordita-Regular.woff') format('woff'), url('../fonts/Gordita-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gordita Regular Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Gordita Regular Italic'), url('../fonts/Gordita Regular Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Gordita Thin';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Gordita Thin'), url('../fonts/Gordita Thin.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Gordita Thin Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Gordita Thin Italic'), url('../fonts/Gordita Thin Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Gordita Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Gordita Light'), url('../fonts/Gordita Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Gordita Light Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Gordita Light Italic'), url('../fonts/Gordita Light Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Gordita Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Gordita-Medium'), url('../fonts/Gordita-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Gordita Medium Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Gordita-Medium Italic'), url('../fonts/Gordita-Medium Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Gordita Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Gordita Bold'), url('../fonts/Gordita Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Gordita Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Gordita Bold Italic'), url('../fonts/Gordita Bold Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Gordita Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Gordita Black'), url('../fonts/Gordita Black.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Gordita Black Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Gordita Black Italic'), url('../fonts/Gordita Black Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Gordita Ultra';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Gordita Ultra'), url('../fonts/Gordita Ultra.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Gordita Ultra Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Gordita Ultra Italic'), url('../fonts/Gordita Ultra Italic.woff') format('woff');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.joinclass {
+    padding: 0 0 100px;
+}
+
+
+.joinclass-form-col {
+    margin-top: 4%;
+}
+
+.top-navbar {
+    padding: 10px 64px 0;
+    transition: box-shadow .15s ease-in-out;
+    z-index: 999;
+    position: relative;
+}
+
+.top-navbar .logo img {
+    position: relative;
+    top: -3px;
+}
+
+.top-navbar .logo a {
+    text-decoration: none;
+}
+
+.top-navbar .logo {
+    font: 24px "Gordita Medium";
+}
+
+.top-navbar .logo span {
+    position: relative;
+    left: -5px;
+    top: -5px;
+    color: #273347;
+}
+
+.joinclass .joinclass-inner {
+    width: 530px;
+    margin: 0 auto;
+    text-align: center;
+    min-height: calc(100vh - 122px);
+    margin-top: -30px;
+}
+
+.joinclass-inner img.joinclass-img {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.joinclass-inner h2 {
+    font-size: 48px;
+    font-weight: 400;
+    font-family: 'Gordita regular';
+    color: #151b26;
+    margin: 5px 0 5px;
+}
+
+.joinclass-form-col form input {
+    font-family: 'Gordita regular';
+    background-color: #fff;
+    border: 2px solid #e0e6e8;
+    font-size: 19px;
+    color: #6d7881;
+    border-radius: 3px;
+    height: 47px;
+    line-height: normal;
+    margin: 0;
+    margin-bottom: 0px;
+    padding: 0 0 0 20px;
+    transition: border .15s;
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    line-height: 50px;
+}
+
+.joinclass-form-col form input:focus {
+    border-color: #aba3ff;
+    outline: 0
+}
+
+.joinclass-form-col form input::placeholder {
+    color: #b7bfc6;
+    letter-spacing: .5px;
+    line-height: 49px;
+}
+
+.joinclass-form-col .joinclass-btn {
+    font-family: 'Gordita medium';
+    height: 47px;
+    line-height: 50px;
+    padding: 0 24px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0;
+    background-color: #796eff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    border: none;
+    letter-spacing: .5px;
+    transition: background-color .15s, color .15s ease-in-out;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.joinclass-form-col .joinclass-btn:hover {
+    background-color: #635ac7;
+    border-bottom: none;
+    color: #fff;
+    text-decoration: none;
+}
+
+.terms-text {
+    font-family: 'Gordita regular';
+    font-size: 13px;
+    font-weight: 400;
+    color: #646f79;
+    margin-top: 5px;
+    line-height: 23px;
+}
+
+.terms-text a {
+    font-family: 'Gordita regular';
+    text-decoration: none;
+    border-bottom: 1px dotted #848f99;
+    color: #646f79;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+@media(max-width:577px) {
+    .top-navbar {
+        padding: 10px 20px 5px;
+        box-shadow: 0 2px 12px 0 rgba(36, 50, 66, .075);
+        width: 100%;
+        background: #fff;
+        box-sizing: border-box;
+    }
+    .joinclass .joinclass-inner {
+        width: 85%;
+        padding-top: 10px;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .joinclass-inner h2 {
+        font-size: 35px;
+    }
+    #sticky-navbar a img {
+        width: 150px;
+    }
+    .joinclass-form-col .sigin-btn,
+    .joinclass-form-col form input {
+        font-size: 16px;
+    }
+    .joinclass .joinclass-inner .joinclass-img {
+        width: 200px;
+        display: block;
+        margin: 0 auto;
+    }
+    .top-navbar .logo img {
+        height: 45px;
+    }
+    .top-navbar .logo {
+        font: 19px "Gordita Medium";
+    }
+}
+
+@media(min-width:577px) and (max-width:1024px) {
+    .top-navbar {
+        padding: 10px 35px;
+        box-shadow: 0 2px 12px 0 rgba(36, 50, 66, .075);
+        height: 60px;
+        display: flex;
+    }
+    .joinclass .joinclass-inner {
+        width: 500px;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .joinclass .joinclass-inner .joinclass-img {
+        width: 240px;
+        display: block;
+        margin: 0 auto;
+    }
+    .joinclass .joinclass-inner h2 {
+        font-size: 40px;
+        margin: 15px 0;
+    }
+    .google-action-btn button {
+        width: 90%;
+    }
+}
+
+
+/* ipdad pro */
+
+@media only screen and (min-width:1024px) and (max-width: 1366px) {
+    .joinclass .joinclass-inner {
+        width: 630px;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .joinclass .joinclass-inner .joinclass-img {
+        width: 250px;
+        display: block;
+        margin: 0 auto;
+    }
+    .joinclass .joinclass-inner h2 {
+        font-size: 50px;
+    }
+    .joinclass {
+        padding: 0 0 65px;
+    }
+}
+
+
+/* iPhone 5*/
+
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+    .joinclass .joinclass-inner .jclass-illustration {
+        width: 200px;
+    }
+    .joinclass-inner h2 {
+        font-size: 30px;
+    }
+}
+
+
+/* -- Footer -- */
+
+.footer {
+    position: relative;
+    background: #4e4d5e;
+    color: #e3e3e3
+}
+
+.footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    max-width: 100%;
+    width: calc(100% - 48px);
+    padding-top: 17px;
+    padding-bottom: 17px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 576px) {
+    .footer .container {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        padding-top: 27px;
+        padding-bottom: 37px
+    }
+}
+
+.footer .footer-logo {
+    text-align: center
+}
+
+@media screen and (max-width: 576px) {
+    .footer .footer-logo {
+        width: 100%;
+        order: 1
+    }
+}
+
+.footer .footer-logo a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer .footer-logo span {
+    display: none;
+    font-size: 24px
+}
+
+@media screen and (max-width: 576px) {
+    .footer .footer-logo span {
+        padding-top: 10px;
+        display: block;
+        font-family: 'Gordita regular';
+    }
+}
+
+.footer .footer-logo .copy {
+    font-size: 12px;
+    line-height: 16px;
+    color: inherit;
+    padding-top: 4px;
+    font-family: 'Gordita regular';
+}
+
+.footer .footer-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+@media screen and (max-width: 576px) {
+    .footer .footer-menu {
+        width: 100%;
+        order: 0;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap
+    }
+}
+
+.footer .footer-menu__item {
+    padding: 0 30px
+}
+
+@media screen and (max-width: 768px) {
+    .footer .footer-menu__item {
+        padding: 0 20px
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .footer .footer-menu__item {
+        padding: 0 0 20px;
+        width: 100%;
+        text-align: center
+    }
+}
+
+.footer .footer-menu__item h3 {
+    text-transform: uppercase;
+    font: 14px/19px "Gordita Medium";
+    padding-bottom: 6px
+}
+
+.footer .footer-menu__item-list li {
+    display: block;
+    padding-bottom: 6px
+}
+
+@media screen and (max-width: 576px) {
+    .footer .footer-menu__item-list li {
+        padding-bottom: 15px
+    }
+}
+
+.footer .footer-menu__item-list li a {
+    font-size: 14px;
+    line-height: 19px;
+    color: inherit;
+    font-family: 'Gordita regular';
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .footer .footer-menu__item-list li a {
+        font-size: 11px;
+        line-height: 16px
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .footer .footer-menu__item-list li a {
+        font-size: 16px;
+        padding: 0
+    }
+}
+
+.footer .footer-menu__item-list li a:hover,
+.footer .footer-menu__item-list li a:focus {
+    color: #fff;
+    text-decoration: underline
+}
+
+.footer .footer-menu__item-list li:last-child a {
+    padding-right: 0
+}
+
+.footer .footer-menu__item:last-child {
+    padding-right: 0
+}

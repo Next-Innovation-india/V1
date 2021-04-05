@@ -1,36 +1,19 @@
 .full{
     width: 100%;
-    height: 500px;
+    height: 80vh;
     position: relative;
+    overflow: hidden;
 }
+
 .wrap{
     width: 100%;
     position: absolute;
     text-align: center;
     transition: 2s;
 }
-.move-left {
-    left: 0;
-    -webkit-animation: slider 1.5s forwards;
-    transition: 0.5s;
-}
-@keyframes slider {
-    from{left: 100%;}
-}
 
-.move-again{
-    left: -100%;/*
-    transform: translateX(-100%);
-    -webkit-transform:translateX(-100%);*/
-    -webkit-animation: slider2 1s forwards;
-    transition: 0.5s;
-}
-@keyframes slider2 {
-    from{left: 0;}
-}
-
-.arrowfill{
-    fill: #808B96;
+#s2{
+	display: none;
 }
 
 .wrap .pull-left{
@@ -41,6 +24,11 @@
 }
 .wrap .pull-right{
     transition: 0.4s;
+}
+.wrap .pull-right img{
+	top: 3vh;
+	position: absolute;
+	right: 0;
 }
 .wrap .pull-right img.no-p{
     display: none;
@@ -58,15 +46,17 @@
     user-select: none;
 }
 .next{
+	display: none;
     right: 0;
 }
 .prev {
+	display: none;
     left: 0;
 }
 .dots{
     position: absolute;
     width: 100%;
-    bottom: 20%;
+    bottom: 36vh;
     left: 4%;
 }
 .dot {
@@ -106,98 +96,147 @@
 .buttons .play-icon{
     text-align: left;
 }
-@media screen and (max-width: 1200px){
-    .wrap .pull-left{
-        width: 33%;
-        float: left;
-        padding-left: 30px;
-    }
-    .wrap .pull-right{
-        width: 60%;
-        float: right;
-        padding-right: 30px;
-    }
-    .buttons .btn{
-        display: block;
-        float: unset;
-    }
-    .buttons .paly-video{
-        display: block;
-        margin-top: 10px;
-        float: unset;
-    }
+
+.move-left {
+    left: 0;
+    -webkit-animation: sliderl 1.5s forwards;
+    transition: 0.5s;
 }
-@media screen and (max-width: 1000px){
-    .wrap .pull-right{
-        padding-right: 20px;
-    }
-    .wrap .pull-left{
-        padding-left: 20px;
-        padding-top: 50px;
-    }
+@keyframes sliderl {
+    from{left: 100%;}
 }
-@media screen and (max-width: 900px){
-    .wrap .pull-left{
-        padding-top: 10px;
-    }
+
+.move-l-again{
+    left: -100%;
+    -webkit-animation: sliderla 1s forwards;
+    transition: 0.5s;
+}
+@keyframes sliderla {
+    from{left: 0;}
+}
+
+.move-right {
+    left: 0;
+    -webkit-animation: sliderr 1.5s forwards;
+    transition: 0.5s;
+}
+@keyframes sliderr {
+    from{left: -100%;}
+}
+
+.move-r-again{
+    left: 100%;
+    -webkit-animation: sliderra 1s forwards;
+    transition: 0.5s;
+}
+@keyframes sliderra {
+    from{left: 0;}
+}
+
+@media screen and (max-width: 1250px){
     .dots{
-        display: none;
+    	bottom: 10vh;
     }
 }
-@media screen and (max-width: 768px){
-    .wrap .pull-right img {
-        margin-top: 20%;
-    }
-    .wrap .pull-right img.no-p{
-        display: inline;
-    }
-    .wrap .pull-right img.with-p{
-        display: none;
-    }
-    .howitwork {
-        margin-top: 30%;
-    }
+@media screen and (max-width: 1100px){
+	.dots{
+		bottom: 10vh;
+	}
     .wrap .pull-right{
-        width: 100%;
-        padding: 0;
+    	width: 100%;
+    	max-width: 100%;
+    	padding: 0 20px;
+    }
+    .wrap .pull-right img{
+    	width: unset;
+    	float: unset;
+    	right: unset;
+    	max-height: 45vh;
+    	position: relative;
     }
     .wrap .pull-left{
-        width: 100%;
-        display: block;
-        padding: 0;
-        position: absolute;
-        bottom: -280px;
-        right: 0;
-    }
-    .wrap .pull-left h2{
-        text-align: center;
+    	width: 100%;
+    	max-width: 100%;
+    	padding: 50px;
+    	margin: 0;
+    	top: 47vh;
+    	position: absolute;
     }
     .wrap .pull-left p{
-        text-align: center;
+    	text-align: center;
     }
-    .pull-left .buttons{
-        float: unset;
-        margin: 1% auto;
-        width: 150px;
+    .wrap .pull-left .buttons{
+    	position: absolute;
+    	left: 32%;
     }
-    .buttons .btn{
-        font-size: 16px;
+    .wrap .pull-left .buttons .btn{
+    	background: #fff;
+    	color: #796eff;
     }
-    .buttons .paly-video{
-        width: 150px;
-        margin: 10px auto;
+    .wrap .pull-left .buttons .paly-video p{
+    	color: #fff;
+    }
+    .wrap .pull-right img.with-p{
+    	display: none;
+    }
+    .wrap .pull-right img.no-p{
+    	display: inline;
+    }
+}
+@media screen and (max-width: 780px){
+    .dots{
+    	left: 88%;
+    }
+    .wrap .pull-left{
+    	top: 46vh;
+    }
+    .wrap .pull-right img{
+		top: 0;
+	}
+	.wrap .pull-left .buttons{
+		left: 24vw;
+	}
+	.wrap .pull-left .buttons .btn{
+    	background: #796eff;
+    	color: #fff;
+    }
+    .wrap .pull-left .buttons .paly-video p{
+    	color: #796eff;
     }
 }
 @media screen and (max-width: 650px) {
-    .buttons{
-        width: 90px;
+    .wrap .pull-right{
+    	padding: 0 40px;
+    }
+    .wrap .pull-left p{
+
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+	.wrap .pull-right img{
+		margin: 0;
+		padding: 0;
+	}
+}
+@media screen and (max-width: 576px) {
+    .wrap .pull-right img{
+		margin: 0;
+		padding: 0 20px;
+	}
+	.wrap .pull-left .buttons{
+		left: 18vw;
+		padding-top: 20px;
+	}
+	.dots{
+    	left: 85vw;
+    	bottom: 0;
+    }
+}
+@media screen and (max-width: 450px) {
+    .wrap .pull-left .buttons{
+    	left: 27vw;
     }
     .buttons .paly-video{
-        width: 90px;
-    }
-    .buttons .paly-video p{
-        margin-left: 0;
-        font-size: 12px;
-        float: unset;
+    	padding-top: 5%;
     }
 }
