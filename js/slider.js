@@ -67,7 +67,11 @@ var paused = false,
     },5000);
 
 
-$('.next, .prev , .dot , .paly-video').hover(function() {
+function pause(){
+    paused = true;
+}
+
+$('.next, .prev , .dot').hover(function() {
     paused = true;
 },function() {
     paused = false;
