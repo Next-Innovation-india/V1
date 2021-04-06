@@ -1497,7 +1497,6 @@ section.main-scene.bg2 {
     user-select: none;
     text-align: center;
     font-size: 1.3em;
-    transition: 0.3s background-color ease, 0.3s box-shadow ease;
     box-sizing: border-box;
     padding: 6px 25px;
     margin: 0 auto;
