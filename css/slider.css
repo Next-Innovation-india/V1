@@ -2,7 +2,7 @@
     width: 100%;
     height: 80vh;
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .wrap{
@@ -131,12 +131,29 @@
 @keyframes sliderra {
     from{left: 0;}
 }
-
-@media screen and (max-width: 1440px){
+@media screen and (min-width: 2000px) {
+    .full {
+        overflow: hidden;
+    }
+    .container {
+        max-width: 2560px;
+    }
+}
+@media screen and (max-width: 2800px){
+    .wrap .pull-left{
+        padding-top: 15%;
+    }
+}
+@media screen and (max-width: 1920px){
+    .wrap .pull-left{
+        padding-top: 7%;
+    }
+}
+/*@media screen and (max-width: 1440px){
     .wrap .pull-left{
         padding-top: 12%;
     }
-}
+}*/
 @media screen and (max-width: 1200px){
     .wrap .pull-left{
         padding-top: 12%;
@@ -259,6 +276,9 @@
     }
 }
 @media screen and (max-width: 450px) {
+    .main-scene__text p.main-text {
+    font-size: 2em;
+    }
     .wrap .pull-left .buttons{
     	left: 27vw;
     }
@@ -272,7 +292,7 @@
         top: 39vh;
     }
     .main-scene__text p.handwritten{
-        display: none;
+        font-size: .8em;
     }
     .wrap .pull-left .buttons{
         left: 27%;
@@ -282,13 +302,71 @@
         width: 170px;
     }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 360px) {
     .main-scene__text p.main-text{
-        font-size: 1em !important;
+        font-size: 1em;
+    }
+    .buttons .paly-video{
+        width: 140px;
     }
 }
 @media screen and (max-width: 300px) {
     .dots{
         left: 4%;
+    }
+}
+@media screen and (max-height: 500px) {
+    section.main-scene{
+        padding-top: 100px;
+    }
+    .full{
+        padding-top: 2em;
+    }
+    .main-nav{
+        padding: 15px;
+    }
+    .wrap .pull-right{
+        width: 50%;
+        float: right;
+        margin-top: 2%;
+    }
+    .wrap .pull-left{
+        width: 50%;
+        float: left;
+        margin-top: 0;
+        top: 0;
+    }
+    .main-scene__text p.main-text{
+        font-size: 1.5em;
+    }
+    .main-scene__text p.handwritten{
+        font-size: .8em;
+    }
+    .wrap .pull-left .buttons{
+        width: 350px;
+        left: 1%;
+    }
+    .buttons .paly-video{
+        width: 160px;
+    }
+    .wrap .pull-left .buttons .btn{
+        background: #796eff;
+        color: #fff;
+    }
+    .wrap .pull-left .buttons .paly-video p{
+        color: #796eff;
+    }
+}
+@media screen and (max-height: 400px) {
+    
+    
+}
+@media screen and (max-width: 1024px) and (height: 1366px) {
+    .main-nav nav .menu li:nth-of-type(2) a {
+        color: #7a6eff !important;
+    }
+    .menu * {
+        color: #7a6eff !important;
+        fill: #7a6eff !important;
     }
 }

@@ -4,8 +4,6 @@ document.getElementById("s2").style.display = "block";
 
 move_r(slideIndex);
 
-
-
 function NextSlides(n) {
     move_r(slideIndex += n);
 }
@@ -67,12 +65,20 @@ var paused = false,
     },5000);
 
 
-function pause(){
-    paused = true;
-}
-
-$('.next, .prev , .dot').hover(function() {
+$('.next, .prev , .dot , .btn , .btn3').hover(function() {
     paused = true;
 },function() {
     paused = false;
 });
+
+var flag = false;
+
+$('.paly-video').hover(function() { paused = true; },palyvid());
+
+function palyvid(){
+    if (!flag) { paused = false; }
+}
+
+document.getElementById("play-video").addEventListener("click", function(){ flag = true; paused = true; });
+document.getElementById("play-video1").addEventListener("click", function(){ flag = true; paused = true; });
+document.getElementById("closevid").addEventListener("click", function(){ paused = false; });
