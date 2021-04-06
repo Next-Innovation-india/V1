@@ -73,12 +73,11 @@ $('.next, .prev , .dot , .btn , .btn3').hover(function() {
 
 var flag = false;
 
-$('.paly-video').hover(function() { paused = true; },palyvid());
-
-function palyvid(){
+$('.paly-video').hover(function() { paused = true; },function(){
     if (!flag) { paused = false; }
-}
+});
+
 
 document.getElementById("play-video").addEventListener("click", function(){ flag = true; paused = true; });
 document.getElementById("play-video1").addEventListener("click", function(){ flag = true; paused = true; });
-document.getElementById("closevid").addEventListener("click", function(){ paused = false; });
+document.getElementById("closevid").addEventListener("click", function(){ flag = false; paused = false; });

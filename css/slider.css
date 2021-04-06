@@ -55,7 +55,7 @@
 }
 .dots{
     position: absolute;
-    bottom: 20%;
+    bottom: 29.5%;
     left: 4%;
 }
 .dot {
@@ -85,7 +85,7 @@
     padding-top: 3%;
 }
 .buttons .paly-video p{
-    color: #7a6eff;
+    color: rgb(107 96 255);
     float: left;
     text-align: left;
     padding: 0 0 15px 0;
@@ -142,6 +142,9 @@
 @media screen and (min-width: 2500px){
     .wrap .pull-left{
         padding-top: 15%;
+    }
+    .dots {
+        bottom: 44%;
     }
 }
 @media screen and (min-width: 1200px) and (max-width: 1500px) {
@@ -357,8 +360,8 @@
     }
 }
 @media screen and (max-height: 400px) {
-    
-    
+
+
 }
 @media screen and (max-width: 1024px) and (height: 1366px) {
     .main-nav nav .menu li:nth-of-type(2) a {

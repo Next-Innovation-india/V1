@@ -1,76 +1,88 @@
-var slideIndex = 1;
+(function () {
+    'use strict';
 
-document.getElementById("s2").style.display = "block";
+    //mobile menu
+    var toggles = document.querySelectorAll('.burger-menu');
 
-move_r(slideIndex);
+    for (var i = toggles.length - 1; i >= 0; i--) {
+        var toggle = toggles[i];
+        toggleHandler(toggle);
+    };
 
-function NextSlides(n) {
-    move_r(slideIndex += n);
-}
-
-function PrevSlides(n) {
-    move_l(slideIndex += n);
-}
-
-function currentSlide(n) {
-    if (n == 1) {move_l(slideIndex = n);}
-    if (n == 2) {move_r(slideIndex = n);}
-}
-
-function move_l(n){
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-
-    for (i = 0; i < slides.length; i++) {
-        slides[i].classList.remove('move-r-again');
-        slides[i].classList.remove('move-right');
-        slides[i].classList.add('move-left');
-        slides[i].classList.remove('move-l-again');
+    function toggleHandler(toggle) {
+        toggle.addEventListener('click', function (e) {
+            e.preventDefault();
+            (this.classList.contains('is-active') === true) ? this.classList.remove('is-active') : this.classList.add('is-active');
+            var elMenu = document.querySelector('.menu');
+            elMenu.classList.toggle('responsive');
+        });
     }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+    //open popup
+    var openpopup = document.getElementsByClassName('openpopup');
+    var popup = document.querySelector('.popup');
+
+    for (var i = 0; i < openpopup.length; i++) {
+        openpopup[i].addEventListener('click', function () {
+            popup.style.display = 'block';
+        });
     }
-    slides[slideIndex-1].classList.remove('move-left');
-    slides[slideIndex-1].classList.add('move-l-again');
-    dots[slideIndex-1].className += " active";
+
+    // document.addEventListener('mousedown', function (e) {
+    //   if (e.target.closest('.popup__inner') === null) {
+    //     popup.style.display = 'none';
+    //   }
+    // });
+
+})();
+
+MAILER_URL = "https://apiswiftgrade.it-support.company:8085/api/v1/send_email_notification/v1/"
+
+
+// $(".alert").alert('close')
+
+//form validation
+function validate(e) {
+    e.preventDefault();
+    var emailerror = document.querySelector('.email');
+    var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+    var address = document.forms['form_id'].elements['email'].value;
+
+    var label = document.createElement('label');
+    label.className = "error";
+    label.innerHTML = "A valid email is required";
+
+    var error = document.querySelector('.error')
+
+    if (reg.test(address) == false) {
+
+        if (error == null) {
+            emailerror.after(label);
+        }
+        return false;
+    } else {
+        if (document.querySelector('.error')) {
+            document.querySelector('.error').remove();
+        }
+    }
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", MAILER_URL);
+    xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+            var popup = document.querySelector('.popup');
+            popup.style.display = 'none';
+            document.forms['form_id'].reset();
+            document.querySelector('.popup-thank-you').style.display = "block";
+            setTimeout(function () { location.reload(); }, 11000);
+        };
+    }
+    xhr.send(JSON.stringify({ "email": address }));
 }
 
-function move_r(n){
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
+// Close popup
 
-    for (i = 0; i < slides.length; i++) {
-        slides[i].classList.remove('move-left');
-        slides[i].classList.remove('move-l-again');
-        slides[i].classList.add('move-right');
-        slides[i].classList.remove('move-r-again');
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].classList.remove('move-right');
-    slides[slideIndex-1].classList.add('move-r-again');
-    dots[slideIndex-1].className += " active";
-}
-
-var paused = false,
-    interval = setInterval(function() {
-        (!paused) && $('#next').trigger('click');
-    },5000);
-
-
-$('.next, .prev , .dot , .btn').hover(function() {
-    paused = true;
-},function() {
-    paused = false;
+document.getElementById("finish-btn").addEventListener("click", function () {
+    location.reload();
+    console.log('clicked')
 });
-
-document.getElementById("play-video").addEventListener("click", function(){ paused = true; });
-document.getElementById("play-video1").addEventListener("click", function(){ paused = true; });
-document.getElementById("closevid").addEventListener("click", function(){ paused = false; });
