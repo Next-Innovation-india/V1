@@ -11,7 +11,9 @@
     text-align: center;
     transition: 2s;
 }
-
+#slide2-image {
+    width: 75%;
+}
 #s2{
 	display: none;
 }
@@ -146,12 +148,16 @@
     .dots {
         bottom: 44%;
     }
+    #slide2-image {
+        width: 70%;
+    }
 }
 @media screen and (min-width: 1200px) and (max-width: 1500px) {
     .wrap .pull-left{
         padding-top: 9%;
     }
 }
+
 @media screen and (max-width: 1050px){
 	.dots{
 		bottom: 20%;
@@ -196,7 +202,44 @@
     .wrap .pull-right img.no-p{
     	display: inline;
     }
+    #slide2-image {
+        width: 70%;
+        margin: 0 auto;
+    }
+    #slide1-image {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .main-scene__text p.main-text {
+        /*margin-top: 20%;*/
+    }
 }
+
+@media screen and (width: 1024px) and (max-height: 800px) {
+    .wrap .pull-right {
+        width: 50%;
+    }
+    .wrap .pull-left {
+        width: 50%;
+    }
+    #slide2-image {
+        width: 80%;
+    }
+    #slide1-image {
+        width: 100%;
+    }
+    .main-scene__text p.main-text {
+        margin-top: -60%;
+    }
+    .wrap .pull-left .buttons .btn {
+        background: #796eff;
+        color: #fff;
+    }
+    .wrap .pull-left .buttons .paly-video p {
+        color: #6b60ff;
+    }
+}
+
 @media screen and (max-width: 780px){
     .full {
         height: 90vh;
@@ -232,6 +275,9 @@
     }
 }
 @media screen and (max-width: 768px) {
+    .full {
+        height: 100vh;
+    }
     .wrap .pull-right{
         margin: 0;
     }
@@ -240,6 +286,23 @@
     }
     .buttons .paly-video{
         width: 180px;
+    }
+    #slide2-image {
+        width: 50%;
+        margin: 0 auto;
+        margin-top: -10%;
+    }
+    #slide1-image {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: -10%;
+    }
+    .main-scene__text p.main-text {
+        margin-top: 15%;
+    }
+    .dots {
+        bottom: 0;
+        left: 80%;
     }
 }
 @media screen and (max-width: 580px) {
@@ -270,10 +333,19 @@
     .wrap .pull-left{
         top: 43vh;
     }
+    .full {
+        padding-top: 20% !important;
+        height: 100vh;
+    }
+    #slide2-image {
+        width: 75%;
+        margin: 0 auto;
+    }
 }
 @media screen and (max-width: 450px) {
     .main-scene__text p.main-text {
-    font-size: 2em;
+        font-size: 2em;
+        margin-top: 0;
     }
     .wrap .pull-left .buttons{
     	left: 27vw;

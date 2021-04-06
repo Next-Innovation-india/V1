@@ -62,7 +62,7 @@ function move_r(n){
 var paused = false,
     interval = setInterval(function() {
         (!paused) && $('#next').trigger('click');
-    },5000);
+    },10000);
 
 
 $('.next, .prev , .dot , .btn , .btn3').hover(function() {
