@@ -281,7 +281,7 @@
           <h3 class="explainor-video">Explainer video</h3>
           <script src="https://fast.wistia.com/embed/medias/deeyn4mzca.jsonp" async></script>
           <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-          <div class="wistia_responsive_padding" style="padding:56.56% 0 0 0;position:relative;">
+          <div class="video wistia_responsive_padding" style="padding:56.56% 0 0 0;position:relative;">
             <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
               <div class="wistia_embed wistia_async_deeyn4mzca videoFoam=true" style="height:100%;position:relative;width:100%">
                 <div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
@@ -369,7 +369,7 @@
           <h3 class="explainor-video">Explainer video</h3>
           <script src="https://fast.wistia.com/embed/medias/deeyn4mzca.jsonp" async></script>
           <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-          <div class="wistia_responsive_padding" style="padding:56.56% 0 0 0;position:relative;">
+          <div class="video wistia_responsive_padding" style="padding:56.56% 0 0 0;position:relative;">
             <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
               <div class="wistia_embed wistia_async_deeyn4mzca videoFoam=true" style="height:100%;position:relative;width:100%">
                 <div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
@@ -597,7 +597,10 @@
   <div class="modal-content">
 
 
-    <iframe id="youtube_player" class="yt_player_iframe" width="100%" height="100%" src="http://www.youtube.com/embed/eDvSrMnL-8M?enablejsapi=1&version=3&playerapiid=ytplayer"  allowfullscreen="true" allowscriptaccess="always" frameborder="0"></iframe>
+    <script src="https://fast.wistia.com/embed/medias/deeyn4mzca.jsonp" async></script>
+    <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+    <div class="modal-video wistia_responsive_padding" style="padding:56.56% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><span class="wistia_embed wistia_async_deeyn4mzca popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;position:relative;width:100%">&nbsp;</span></div></div>
+
 
   </div>
 
@@ -677,7 +680,7 @@
 
   // When the user clicks on <span> (x), close the modal
   span.onclick = function() {
-    $('.yt_player_iframe').each(function(){
+    $('.modal-video').each(function(){
       this.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*')
     });
     modal.style.display = "none";
@@ -711,7 +714,7 @@
 
   // When the user clicks on <span> (x), close the modal
   span.onclick = function() {
-    $('.yt_player_iframe').each(function(){
+    $('.modal-vide').each(function(){
       this.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*')
     });
     modal.style.display = "none";

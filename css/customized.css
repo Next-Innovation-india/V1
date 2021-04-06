@@ -306,7 +306,7 @@ section.grading-superpowers {
     margin: 0 0 2%;
     color: gray;
 }
-.video-explain iframe {
+.video-explain .video {
     margin: 0 25%;
     width: 50%;
 }
@@ -578,7 +578,7 @@ section.main-scene.bg2 {
     *{
         /*width:auto;*/
     }
-    .video-explain iframe {
+    .video-explain .video {
         margin: 0px 5%;
         width: 90%;
     }
